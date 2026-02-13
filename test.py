@@ -53,7 +53,7 @@ def arg_parser():
     parser.add_argument(
         "--data_root",
         type=str,
-        default="/root/huy/datasets/",
+        default="/root/madz/datasets/",
         help="Path to data directory",
     )
     parser.add_argument(
