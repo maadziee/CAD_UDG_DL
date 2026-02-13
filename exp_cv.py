@@ -124,7 +124,7 @@ if __name__ == "__main__":
     CLASSES = ["bcc", "mel", "scc"] if DATASET == "Multiclass" else ["nevous", "others"]
 
     dagshub.init(
-        repo_owner="huytrnq", repo_name="Deep-Skin-Lesion-Classification", mlflow=True
+        repo_owner="madzie", repo_name="CAD_UDG_DL", mlflow=True
     )
     # Start MLflow tracking
     mlflow.start_run(run_name=f"Skin Lesion Classification - {DATASET}")
