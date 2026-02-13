@@ -28,7 +28,7 @@ def arg_parser():
     parser.add_argument(
         "--data_root",
         type=str,
-        default="/root/huy/datasets/",
+        default="/root/madz/datasets/",
         help="Path to data directory",
     )
     parser.add_argument(
@@ -88,7 +88,7 @@ if __name__ == "__main__":
     CLASSES = ["bcc", "mel", "scc"] if DATASET == "Multiclass" else ["nevous", "others"]
 
     dagshub.init(
-        repo_owner="huytrnq", repo_name="Deep-Skin-Lesion-Classification", mlflow=True
+        repo_owner="madzie", repo_name="CAD_UDG_DL", mlflow=True
     )
 
     #################### Test the model with k-folds ####################
