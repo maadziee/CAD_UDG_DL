@@ -235,7 +235,7 @@ def main(args):
     # Dataset type
     DATASET = "Binary" if args.dataset.lower() == "binary" else "Multiclass"
     dagshub.init(
-        repo_owner="huytrnq", repo_name="Deep-Skin-Lesion-Classification", mlflow=True
+        repo_owner="madzie", repo_name="CAD_UDG_DL", mlflow=True
     )
 
     DEVICE = (
@@ -310,6 +310,6 @@ def main(args):
 if __name__ == "__main__":
     args = arg_parser()
     os.environ["MLFLOW_TRACKING_URI"] = (
-        "https://dagshub.com/huytrnq/Deep-Skin-Lesion-Classification.mlflow"
+        "https://dagshub.com/madzie/CAD_UDG_DL.mlflow"
     )
     main(args)
